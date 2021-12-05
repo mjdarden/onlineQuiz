@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Michael Darden's page</title>
+    </head>
+
+    <body style="background-color: blanchedalmond;">
+        <h1>Michael Darden's page</h1>
+        <h3>The James Webb Space Telescope</h3>
+        <p>
+            &emsp;The James Webb space telescope is the successor<br>
+            to the Hubble space telescope. It will be powerful<br>
+            enough to see if there is light from before the big<br>
+            bang as well as if there is life on planets obiting<br>
+            distant stars. It has been under development for<br>
+            well over a decade and will be launched in december.<br>
+            Click 
+            <a 
+                href="https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
+                target="_blank">
+                here
+            </a> 
+            for more information:
+        </p>
+        <br>
+
+        <p>1. What is the launch date of the telescope?</p>
+        <p id="q1_A">A. 18 December 2021</p>
+        <p id="q1_B">B. 21 December 2021</p>
+        <p id="q1_C">C. 7 December 2021</p>
+        <p id="q1Result"></p>
+
+        <p>2. What is the diameter of the telescope's mirror?</p>
+        <p id="q2_A">A. 52 ft</p>
+        <p id="q2_B">A. 21 ft</p>
+        <p id="q2_C">A. 17 ft</p>
+        <p id="q2Result"></p>
+
+        <p>3. Which image is the correct telescope?</p>
+        <p id="q3_A">A. <img src="hubbleSpaceTelescope.png" alt="hubbleSpaceTelescope"></p>
+        <p id="q3_B">B. <img src="jamesWebbSpaceTelescope.png" alt="jamesWebbSpaceTelescope"></p>
+        <p id="q3_C">C. <img src="keplerSpaceTelescope.png" alt="keplerSpaceTelescope"></p>
+        <p id="q3Result"></p>
+
+        <script>
+            document.getElementById("q1_A").addEventListener("click", q1A);
+            document.getElementById("q1_B").addEventListener("click", q1B);
+            document.getElementById("q1_C").addEventListener("click", q1C);
+            
+            function q1A() {
+              document.getElementById("q1Result").innerHTML = "Correct!";
+            }
+            function q1B() {
+              document.getElementById("q1Result").innerHTML = "Wrong:(";
+            }
+            function q1C() {
+              document.getElementById("q1Result").innerHTML = "Wrong:(";
+            }
+
+            document.getElementById("q2_A").addEventListener("click", q2A);
+            document.getElementById("q2_B").addEventListener("click", q2B);
+            document.getElementById("q2_C").addEventListener("click", q2C);
+            
+            function q2A() {
+              document.getElementById("q2Result").innerHTML = "Wrong:(";
+            }
+            function q2B() {
+              document.getElementById("q2Result").innerHTML = "Correct!";
+            }
+            function q2C() {
+              document.getElementById("q2Result").innerHTML = "Wrong:(";
+            }
+
+            document.getElementById("q3_A").addEventListener("click", q3A);
+            document.getElementById("q3_B").addEventListener("click", q3B);
+            document.getElementById("q3_C").addEventListener("click", q3C);
+            
+            function q3A() {
+            document.getElementById("q3Result").innerHTML = "Wrong:(";
+            }
+            function q3B() {
+            document.getElementById("q3Result").innerHTML = "Correct!";
+            }
+            function q3C() {
+            document.getElementById("q3Result").innerHTML = "Wrong:(";
+            }
+        </script>
+        
+        <input type="button" value="Reset" onClick="location.reload()">
+    </body>
+</html>
